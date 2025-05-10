@@ -1,0 +1,76 @@
+.hero-section {
+  background-image: url('../img/mobile/background-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    background-image: url('../img/desktop/background-hero.png');
+  }
+}
+
+.hero-title {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 98px;
+}
+
+.hero-text {
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.right-side {
+  width: 155px;
+  height: 89px;
+  border: 0.34px solid rgba(49, 191, 80, 0.1);
+  padding: 8px;
+  margin-top: 13px;
+  margin-left: auto;
+
+  backdrop-filter: blur(2.711111068725586px);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(213, 136, 28, 0.12);
+}
+
+
+.left-side {
+  margin-top: 20px;
+  width: 176px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left-side .hero-text {
+  text-align: start;
+}
+
+
+.bottom-text {
+  margin-top: 43px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.start-game-btn {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 327px;
+  height: 46px;
+  padding: 0 2px;
+  background: #d5881c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 20px;
+  color: #070707;
+  text-align: center;
+  margin-bottom: 60px;
+}

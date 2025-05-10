@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -12,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  background: #1e1e1e;
 }
 
 h1,
@@ -54,7 +56,8 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -63,10 +66,21 @@ h1, h2 {
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
+  background: linear-gradient(
+    180deg,
+    #3f2c20 0%,
+    #322217 40.87%,
+    #20150f 71.15%,
+    #060201 100%
+  );
 
-  // @include media(desktop) {
-  //     max-width: 1440px;
-  //     padding-left: 80px;
-  //     padding-right: 80px;
-  // }
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url('../img/desktop/body-background-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
