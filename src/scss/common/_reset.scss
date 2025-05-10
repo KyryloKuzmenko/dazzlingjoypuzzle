@@ -37,11 +37,36 @@ a {
 }
 
 button {
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: block;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @include media(desktop) {
+      max-width: 1440px;
+      padding-left: 80px;
+      padding-right: 80px;
+  }
 }
