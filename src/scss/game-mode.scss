@@ -1,0 +1,189 @@
+.game-modes-section {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    padding-left: 78px;
+    padding-right: 75px;
+  }
+}
+
+.game-modes-title {
+  font-size: 20px;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.game-modes-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.game-description-text-wrap {
+  margin-top: 40px;
+  @include media(desktop) {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.game-modes-description {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+    width: 1062px;
+  }
+}
+
+.game-modes-options-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 8px;
+
+  @include media(desktop) {
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.game-modes-option-item {
+  display: flex;
+  gap: 24px;
+  @include media(desktop) {
+    width: 464px;
+  }
+}
+
+.check-mark {
+  width: 32px;
+  height: 32px;
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.check-mark-text {
+  font-size: 16px;
+  color: #fff;
+  margin-top: auto;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.game-modes-note {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    margin-top: 40px;
+    font-size: 32px;
+    width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.game-modes-cards-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+
+  @include media(desktop) {
+    margin-top: 86px;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+.game-mode-card-item {
+  height: 593px;
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    height: auto;
+    width: 415px;
+  }
+}
+
+.game-mode-title {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.game-mode-sutitle {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.game-mode-description {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+
+  @include media(desktop) {
+    font-size: 23px;
+    width: 413;
+    
+  }
+}
+
+.game-mode-reverse-card {
+  @include media(desktop) {
+    flex-direction: column-reverse;
+  }
+}
+
+.game-mode-article {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: 2px solid rgba(213, 136, 28, 0.8);
+  border-top: none;
+}
+
+.game-mode-reverse-card .game-mode-article {
+  @include media(desktop) {
+    border: 2px solid rgba(213, 136, 28, 0.8);
+    border-bottom: none;
+  }
+}
