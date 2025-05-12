@@ -1,0 +1,111 @@
+.why-choose-us-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-choose-us-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  width: 270px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    width: auto;
+    margin-top: 100px;
+  }
+}
+
+.why-choose-us-content {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 40px;
+  background-image: url('../img/mobile/why-us-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 139px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    margin-top: 60px;
+    background-image: url('../img/desktop/why-us-desktop-bg.png');
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 22px;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    min-height: 675px;
+  }
+}
+
+.why-choose-us-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  backdrop-filter: blur(7px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include media(desktop) {
+    max-width: 737px;
+    gap: 20px;
+  }
+}
+
+.benefit-item {
+  display: flex;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.why-us-check-mark-img {
+  width: 32px;
+  height: 32px;
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.why-us-text {
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.why-choose-us-quote {
+  width: 320px;
+  margin-top: 21px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 48px;
+    width: 520px;
+  }
+}
+
+.why-choose-us-note {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    max-width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
