@@ -1,0 +1,164 @@
+.how-it-works-section {
+  display: flex;
+}
+
+.how-it-works-wrap {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.how-it-works-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.hiw-subtitle {
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+}
+
+.hiw-subtitle span {
+  color: #d5881c;
+}
+
+.digit-title {
+  font-size: 32px;
+  @include media(desktop) {
+    font-size: 64px;
+  }
+}
+
+.steps-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.steps-text span {
+  color: #d5881c;
+}
+
+.steps-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    max-width: 1062px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+  @include media(desktop) {
+    gap: 60px;
+    margin-top: 60px;
+  }
+}
+
+.steps-item {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    gap: 78px;
+  }
+}
+
+.steps-img {
+  width: 80px;
+  height: 89px;
+  @include media(desktop) {
+    width: 139px;
+    height: 154px;
+  }
+}
+
+.sand-clock {
+  width: 82px;
+  height: 75px;
+  @include media(desktop) {
+    width: 134px;
+    height: 123px;
+  }
+}
+
+.steps-text-wrap {
+  @include media(desktop) {
+    width: 737px;
+  }
+}
+
+.digit {
+  font-size: 36px;
+  text-align: center;
+  color: #d5881c;
+  @include media(desktop) {
+    font-size: 64px;
+  }
+}
+
+.krok {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-left: 20px;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.bottom-text-info-wrap {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(desktop) {
+    margin-top: 100px;
+  }
+}
+
+.bottom-text-info {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+
+  }
+}
+
+.hiw-pc {
+  width: 80px;
+  height: 88px;
+  @include media(desktop) {
+    width: 134px;
+    height: 148px;
+  }
+}
