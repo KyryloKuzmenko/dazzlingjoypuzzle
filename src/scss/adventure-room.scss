@@ -1,0 +1,143 @@
+.adventure-rooms-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.adventure-rooms-title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.adventure-text-wrap {
+  width: 327px;
+
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1171px;
+    margin: 0 auto;
+  }
+}
+
+.adventure-rooms-subtitle {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  font-weight: 400;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+.adventure-rooms-description {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+    max-width: 1171px;
+  }
+}
+
+.adventure-rooms-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.adventure-rooms-item {
+  display: flex;
+  flex-direction: column;
+  height: 568px;
+  width: 331px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    width: 100%;
+    max-height: 460px;
+  }
+}
+
+.room-list-title-wrap {
+  padding-top: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  @include media(desktop) {
+    justify-content: start;
+  }
+}
+
+.room-list-icon {
+  width: 32px;
+  height: 32px;
+
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.adventure-rooms-item-title {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+    text-align: start;
+  }
+}
+
+.adventure-rooms-item-description {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.4;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: start;
+  }
+}
+
+.aricle-border {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid rgba(213, 136, 28, 0.8);
+  border-top: none;
+  @include media(desktop) {
+    border: 2px solid rgba(213, 136, 28, 0.8);
+    border-left: none;
+    padding-left: 24px;
+  }
+}
+
+.note {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-bottom: 60px;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
