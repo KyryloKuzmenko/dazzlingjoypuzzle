@@ -1,0 +1,156 @@
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+
+.gallery-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.gallery-description {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.gallery-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  @include media(desktop) {
+    width: 756px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gallery-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  @include media(desktop) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.gallery-features-list-text {
+  font-size: 16px;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.gallery-note {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.gallery-slider {
+  overflow: hidden;
+  margin-top: 80px;
+  @include media(desktop) {
+    margin-top: 200px;
+  }
+}
+
+// .swiper-slide {
+//   @include media(desktop) {
+//     transition: height 0.3s ease;
+//   }
+// }
+
+.gallery-img {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.gallery-img-desktop {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 61px;
+  height: 61px;
+}
+
+
+
+@media (min-width: 1200px) {
+
+  .gallery-slider .swiper-wrapper {
+    height: 458px;
+    align-items: center;
+    overflow: visible;
+  }
+
+
+  .gallery-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .gallery-img-desktop {
+    width: 628px;
+    height: 365px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+
+  .gallery-slider .swiper-slide.tall .gallery-img-desktop {
+    transform-origin: center;
+    transform: scaleY(1.2);
+  }
+}
+
+
