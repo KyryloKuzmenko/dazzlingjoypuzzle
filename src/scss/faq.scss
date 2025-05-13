@@ -1,0 +1,154 @@
+.faq-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+
+.faq-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 52px;
+  }
+}
+
+.faq-description {
+  margin-top: 24px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 10px;
+  @include media(desktop) {
+    margin-top: 60px;
+    align-items: center;
+  }
+}
+
+.faq {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  width: 270px;
+  @include media(desktop) {
+    font-size: 32px;
+    width: 900px;
+  }
+}
+
+.accordion-wrap {
+  background: #d5881c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 38px;
+  padding: 0px 8px;
+  @include media(desktop) {
+    padding: 32px;
+    width: 1062px;
+    height: 108px;
+  }
+}
+
+.plus-img,
+.minus-img {
+  width: 24px;
+  height: 24px;
+
+  @include media(desktop) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.minus-img {
+  display: none;
+}
+
+.faq-item.active .plus-img {
+  display: none;
+}
+
+.faq-item.active .minus-img {
+  display: block;
+}
+
+.faq-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 32px;
+    width: 1066px;
+  }
+}
+
+.question {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.faq-bottom-text {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 0;
+  }
+}
+
+.email-link {
+  font-size: 16px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 8px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 0;
+  }
+}
+
+.bottom-wrap-text {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+}
