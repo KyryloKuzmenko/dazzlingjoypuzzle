@@ -1,0 +1,222 @@
+.pricing-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+
+.pricing-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.pricing-description {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+}
+
+.price-second-text {
+  margin: 0;
+}
+
+.pricing-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  @include media(desktop) {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+}
+
+.pricing-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(30px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  @include media(desktop) {
+    width: 100%;
+    padding-bottom: 45px;
+  }
+
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  @include media(desktop) {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 20px;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.card-intro {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-top: 16px;
+  @include media(desktop) {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+}
+
+.checkmark {
+  width: 28px;
+  height: 28px;
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+
+  }
+}
+
+.card-feature-title {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 20px;
+  @include media(desktop) {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+}
+
+.card-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.card-features-list li {
+  display: flex;
+  gap: 24px;
+}
+
+.card-features-text {
+  font-size: 14px;
+  color: #fff;
+  width: 274px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    width: 329px
+  }
+}
+
+.feature-note {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-top: 32px;
+  }
+}
+
+.card-price {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 40px;
+  }
+}
+.first {
+  @include media(desktop) {
+    margin-top: auto;
+  }
+}
+
+.pricing-highlights {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    gap: 40px;
+    width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.highlight-icon {
+  width: 50px;
+  height: 50px;
+  @include media(desktop) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.highlight-text {
+  font-size: 16px;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.highlight-text span {
+  color: #d5881c;
+}
