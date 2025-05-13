@@ -1,0 +1,167 @@
+.target-audience-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.target-audience-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+
+.target-audience-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.target-audience-description {
+  margin-top: 24px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+}
+
+.audience-cards-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include media(desktop) {
+    margin-top: 60px;
+  }
+}
+
+.audience-card-item {
+  @include media(desktop) {
+    display: flex;
+
+    align-items: center;
+    height: 331px;
+  }
+}
+
+.audience-card-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.audience-card-item article {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 199px;
+
+  @include media(desktop) {
+    width: 545px;
+    height: 331px;
+  }
+}
+
+.audience-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 247px;
+  height: 199px;
+  @include media(desktop) {
+    width: 411px;
+    height: 332px;
+    left: 134px;
+  }
+}
+
+.audience-card-item:nth-child(even) .audience-img {
+  right: auto;
+  left: 0;
+  @include media(desktop) {
+    left: auto;
+    right: 0;
+  }
+}
+
+.audience-card-text {
+  position: absolute;
+  padding: 33px 0px;
+  width: 161px;
+  height: 91px;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: auto;
+  top: 92px;
+
+  @include media(desktop) {
+    width: 268px;
+    height: 151px;
+    top: 156px;
+  }
+}
+
+.audience-card-item:nth-child(even) .audience-card-text {
+  left: auto;
+  right: 0;
+
+  @include media(desktop) {
+    left: 0;
+  }
+}
+
+.audience-group {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.audience-description {
+  text-align: center;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    width: 411px;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}
+
+.audience-final-note {
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    width: 1279px;
+    margin-top: 60px;
+  }
+}
