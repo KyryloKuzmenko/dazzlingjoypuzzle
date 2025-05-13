@@ -1,0 +1,157 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-wrap {
+  margin-bottom: 60px;
+  @include media(desktop) {
+    margin-bottom: 140px;
+  }
+}
+
+.contact-title {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  @include media(desktop) {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+
+.contact-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #d5881c;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-top: 60px;
+  }
+}
+
+.contact-content-wrap {
+  @include media(desktop) {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+}
+
+.contact-box {
+  border: 2px solid rgba(213, 136, 28, 0.8);
+  padding: 20px 0px;
+  width: 328px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+  @include media(desktop) {
+    margin: 0;
+    padding: 40px 0px;
+    width: 628px;
+    height: 343px;
+    gap: 24px;
+  }
+}
+
+.contact-text {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.contact-text span {
+  font-size: 24px;
+  color: #d5881c;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.contact-box-bottom {
+  width: 252px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 520px;
+  }
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 8px;
+  @include media(desktop) {
+    width: 628px;
+    gap: 24px;
+    margin-top: 0;
+  }
+}
+
+.contact-info-item {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  gap: 16px;
+  align-items: center;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-cta-btn-desktop {
+  display: none;
+}
+
+.contact-cta-btn {
+  padding: 0px 2px;
+  width: 327px;
+  height: 46px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  background: #d5881c;
+  font-weight: 400;
+  font-size: 20px;
+  color: #070707;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.contact-cta-btn-desktop {
+@include media(desktop) {
+  display: block;
+  padding: 0px 6px;
+  width: 628px;
+  height: 72px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background: #d5881c;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #070707;
+}
+}
+
+.info-list-wrap-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
