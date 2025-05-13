@@ -120,7 +120,7 @@
 }
 
 .contact-cta-btn {
-  padding: 0px 2px;
+  display: block;
   width: 327px;
   height: 46px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
@@ -129,6 +129,9 @@
   font-size: 20px;
   color: #070707;
   margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  padding-top: 11px;
 
   @include media(desktop) {
     display: none;
@@ -136,18 +139,19 @@
 }
 
 .contact-cta-btn-desktop {
-@include media(desktop) {
-  display: block;
-  padding: 0px 6px;
-  width: 628px;
-  height: 72px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-  background: #d5881c;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  color: #070707;
-}
+  @include media(desktop) {
+    display: block;
+    width: 628px;
+    height: 72px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    background: #d5881c;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #070707;
+    text-align: center;
+    padding-top: 16px;
+  }
 }
 
 .info-list-wrap-btn {
